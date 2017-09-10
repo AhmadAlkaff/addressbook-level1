@@ -511,11 +511,7 @@ public class AddressBook {
      * @return list of keywords in lower case
      */
     private static Collection<String> keywordsToLowerCase(Collection<String> keywords) {
-
-        keywords.stream()
-                .map(String::toLowerCase);
-                //.collect(Collectors.toList());
-
+        keywords.stream().map(String::toLowerCase);
         return keywords;
     }
 
